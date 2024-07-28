@@ -329,7 +329,7 @@ margin-left: .825rem;
     background-size: 120%;
     background-position: center; 
     height: 60vh;
-    width: 100 vw;
+    width: 100vw;
     display: flex;
     position: relative; 
     top: 4.875rem;
@@ -356,7 +356,7 @@ margin-left: .825rem;
 }
 .linea2 {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 }
 
 .containerMenu {
@@ -382,50 +382,6 @@ margin-left: .825rem;
     background-color: #303030;
     padding: 0px 3.5rem 3rem 3.5rem;
     border: 3px solid rgba(255, 255, 255, 0.08);
-}
-
-@media(max-width:994px){
-    /* menu */
-    .nuestroMenu {
-        width: 90%;
-    }  
-}
-@media(max-width:788px){
-    /* menu */
-.nuestroMenu h2{
-    font-size: 1.9rem;
-}
-html {
-    font-size: 12px;
-}
-}
-@media(max-width:620px){
-    /* menu */
-    html {
-        font-size: 9.3px;
-    }
-}
-@media (max-width:513px) {
-    /* menu */
-    .containerMenu {
-        flex-direction: column;
-        text-align: center;
-    }  
-    .containerMenu img{
-        width: 48%;}
-
-    html {
-            font-size: 10.3px;
-        }
-}
-@media (max-width:323px) {
-    /* menu */
-    .nuestroMenu {
-        width: 100%;
-    }  
-    .containerMenu {
-        gap: 0.7rem;
-    } 
 }
 
 /* Contactos */
@@ -470,4 +426,70 @@ html {
 .direccion { 
  position: relative;
  top: 18.75rem;
+}
+
+/* Media */
+@media(max-width:994px){
+    /* menu */
+    .nuestroMenu {
+        width: 90%;
+    }  
+}
+@media(max-width:788px){
+    /* menu */
+.nuestroMenu h2{
+    font-size: 1.9rem;
+}
+html {
+    font-size: 12px;
+}
+}
+@media(max-width:620px){
+    /* menu */
+    html {
+        font-size: 9.3px;
+    }
+    .fondoMenu {
+        background-size: 120%;
+    }
+    .fondoMenu {
+        height: 50vh;
+    }
+
+}
+@media (max-width:513px) {
+    /* menu */
+    .containerMenu {
+        flex-direction: column;
+        text-align: center;
+    }  
+    .containerMenu img{
+        width: 48%;
+    }
+
+    html {
+            font-size: 10.3px;
+        }
+    .fondoMenu {
+        height: 40vh;
+    }
+    /* reserva */
+    .containerReserva {
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(4, 5rem);
+        }
+    .reserva{
+        grid-column: 1/5;
+        margin-left: 5.1rem;
+        margin-top: 5rem;
+    }
+}
+@media (max-width:323px) {
+    /* menu */
+    .nuestroMenu {
+        width: 100%;
+    }  
+    .containerMenu {
+        gap: 0.7rem;
+    } 
 }
