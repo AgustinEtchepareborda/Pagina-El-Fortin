@@ -1,0 +1,473 @@
+
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    /* background-color: #000; */
+    color: white;
+}
+body {
+    background-color:#212121;
+}
+
+
+.barraNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    padding: 1.7rem 0rem;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.encabezadoTitulo, .encabezadoDerecha {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 2rem;
+}
+
+
+.encabezadoTitulo li a {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 1.625rem;
+}
+
+.encabezadoDerecha li a {
+    padding-right: .625rem;
+    margin-left: 1rem;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.encabezadoDerecha li a:hover, .encabezadoTitulo a:hover {
+    color: orange;
+}
+.heightSection {
+    width: 100%;
+   
+}
+
+/* reserva */
+.fotoRestaurante2 {
+    background-image: url( ../assets/fotorestaurant.png);
+    background-size: 100%;
+    background-position: center; 
+    height: 100vh;
+    width: 100wh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    order: initial;
+}
+
+.containerReserva {
+display: grid;
+grid-template-columns: repeat(4, 9.25rem);
+grid-template-rows: repeat(4, 7rem);
+border-radius: 2.0875rem;
+background-color: #303030;
+
+}
+.cocina {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: auto;
+    object-fit: contain;
+}
+.reserva {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-left: .625rem;
+    margin-top: 7rem;
+}
+.reserva a {
+    background-color: rgba(255, 165, 0, 0.3);
+    padding: 0.99rem 1.995rem;
+    border-radius: 3.625rem;
+    text-decoration: none;
+    font-size: 1.25rem; 
+}
+.reserva img {
+    width: 10%;
+    border-radius: 0px;
+    background-color:  rgba(255, 165, 0, 0);
+    padding-right: .5125rem;
+    position: relative;
+    top: .3825rem;
+}
+.reserva a:hover {
+background-color: rgba(255, 165, 0, 0.5);   
+}
+/* Reserva 1 */
+.textoElFortin {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 1.5375rem;
+}
+.line2 img{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: end;
+    width: 37.5rem;
+    margin-top: 5.125rem;
+}
+.seleccionaNumDePersonas {
+    grid-column: 2/4;
+    grid-row: 2/3;  
+    text-align: center;
+    margin-top: 1.875rem;
+}
+.counter {
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    align-items: center;
+    justify-content: center;
+    gap: 1.625rem;
+    margin-bottom: 8.875rem;
+}
+.counter button {
+    width: 20%;
+    height: 30%;
+}
+.counter p{
+    font-size: 1.625rem;
+}
+.reservaPaginaUno {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    margin-top: 2.575rem;
+}
+.colorQueMolesta{
+    background-color: rgba(0, 0, 0, 0);
+}
+/* Reserva 2 */
+.seleccionaLaFecha {
+    grid-column: 2/4;
+    grid-row: 2/3;  
+    text-align: center;
+    margin-top: 1.875rem;
+    font-size: 1.75rem;
+}
+.fechaColor {
+    background-color: aliceblue;
+    color: #000;
+    width: 1o.5rem;
+    height: 2rem;
+    margin-top: 1.25rem;
+}
+.reservaPaginaUno2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2.575rem;
+}
+/* Reserva 3 */
+.seleccionaHorario {
+    grid-column: 2/4;
+    grid-row: 2/3;  
+    text-align: center;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+.seleccionaHorario p{
+    margin-bottom: 1.25rem;
+}
+.buttonSep {
+    margin-right: 10px;
+}
+.buttonSepLast {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.buttonColor button{
+    color: #000;
+}
+/* reserva 4 */
+.textoFelicitaciones {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 6.5375rem;
+}
+.teEsperamos {
+    grid-column: 2/4;
+    grid-row: 2/3;  
+    text-align: center;
+    margin-top: 3.875rem;
+}
+/* Home */
+.fotoRestaurante {
+    background-image: url( ../assets/fotorestaurant.png);
+    background-size: cover; 
+    height: 100vh;
+    width: 100wh;
+    overflow: hidden;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+.buttonLink {
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center; 
+    text-align: center;
+    height: 4.25rem;
+    color: white; 
+    padding: .3125rem 2.5rem; 
+    justify-content: space-between;
+    text-decoration: none; 
+    font-size: 20px; 
+    border-radius: 5px; 
+    display: inline-flex;
+    position: relative;
+    top: 14.5rem;
+}
+.buttonLink:hover {
+    background-color: rgba(0, 0, 0, 0.7);  
+}
+.vector {
+    padding-right: .925rem;
+    width: 20%;
+}
+.textoConFoto {
+    display:flex;
+    margin-top: 4.125rem;
+}
+.texto1 {
+    position: relative;
+    top: 12.375rem;
+    display:inline-block;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.texto1 h1 {
+font-size: 3rem;
+}
+.texto1 p {
+    font-size: 2rem;
+    }
+
+.mozoCortando {
+    margin-right: 1.875rem;
+    max-width: 50%;
+    object-fit: fill;
+}
+
+.platosPrincipales {
+    text-align: center;
+    margin-top: 1.875rem;
+    font-size: 3rem;
+    padding-top: 1.25rem;
+}
+.fotosPlatosPrincipales {
+    display: flex; 
+    /*  flex-wrap: wrap; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.625rem;
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+   
+}
+.fotosPlatosPrincipales , .imgPlato1, .imgPlato2, .imgPlato3 {
+    width: 95%;
+}
+.contenedorTexto {
+    display: flex;
+    max-width: 80%;
+    margin-left: 3.25rem;
+    justify-content: space-between;
+}
+
+.contenedorTexto h2 {
+    margin: 1rem 3rem;
+}
+.contenedorTexto p{
+    margin: 1rem 3rem;
+}
+
+.redesSociales img{
+width: 4%;
+height: 6%;
+margin-left: .625rem;
+}
+.redesSociales {
+    text-align: right;
+    padding-right: .9375rem;
+}
+.horarios p {
+    width: 7.125rem;
+}
+
+.linea {
+margin-left: .825rem;
+
+}
+
+.line1 img {
+    width: 100%;
+}
+
+/* Menu */
+.fondoMenu {
+    background-image: url( ../assets/restaurante.png);
+    background-size: 120%;
+    background-position: center; 
+    height: 60vh;
+    width: 100 vw;
+    display: flex;
+    position: relative; 
+    top: 4.875rem;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+.nuestroMenu {
+    position: relative;
+    top: 5rem;
+    margin: auto;
+    width: 80%;
+}
+.nuestroMenu h2{
+    text-align: center;
+    padding-top: 3.5625rem;
+    padding-bottom: 3rem;
+    font-size: 2.25rem;
+}
+.nuestroMenu h3{
+    text-align: center;
+    padding-top: 1.5625rem;
+    font-size: 1.5rem;
+}
+.linea2 {
+    flex-direction: column;
+    width: 90%;
+}
+
+.containerMenu {
+    display: flex;
+    position: relative;
+    gap: 1.65rem;
+    align-items: center;
+    top: 1.95rem;
+    padding-bottom: 1.975rem;
+}
+.containerMenu img {
+    width: 22%;
+}
+.containerMenu h4{
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+
+}
+.nuestroMenu p {
+    font-size: 1.2rem;
+}
+.fondoDelMenu {
+    background-color: #303030;
+    padding: 0px 3.5rem 3rem 3.5rem;
+    border: 3px solid rgba(255, 255, 255, 0.08);
+}
+
+@media(max-width:994px){
+    /* menu */
+    .nuestroMenu {
+        width: 90%;
+    }  
+}
+@media(max-width:788px){
+    /* menu */
+.nuestroMenu h2{
+    font-size: 1.9rem;
+}
+html {
+    font-size: 12px;
+}
+}
+@media(max-width:620px){
+    /* menu */
+    html {
+        font-size: 9.3px;
+    }
+}
+@media (max-width:513px) {
+    /* menu */
+    .containerMenu {
+        flex-direction: column;
+        text-align: center;
+    }  
+    .containerMenu img{
+        width: 48%;}
+
+    html {
+            font-size: 10.3px;
+        }
+}
+@media (max-width:323px) {
+    /* menu */
+    .nuestroMenu {
+        width: 100%;
+    }  
+    .containerMenu {
+        gap: 0.7rem;
+    } 
+}
+
+/* Contactos */
+.fotoOpen {
+    background-image: url( ../assets/openimage.png);
+    background-size: 100%;
+    background-position: center; 
+    height: 100vh;
+    width: 100 vw;
+    display: flex;
+    position: relative; 
+    top: 4.875rem;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+.fotoOpen h2 {
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 4.125rem;
+}
+.contactanosTexto {
+    position: relative;
+    top: 7.75rem;
+    text-align: center;
+    font-size: 2.25rem;
+}
+.contactoSection {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    text-align: center;
+    padding-left: 2.5rem;
+}
+.contactoSection img {
+    position: relative;
+    bottom: 2.25rem;
+    width: 40%;
+}
+.direccion { 
+ position: relative;
+ top: 18.75rem;
+}
