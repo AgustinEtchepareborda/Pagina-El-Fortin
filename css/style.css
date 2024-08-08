@@ -5,27 +5,39 @@
     font-family: "Roboto", sans-serif;
     /* background-color: #000; */
     color: white;
+    box-sizing: border-box;
 }
 body {
     background-color:#212121 !important;
+}
+html{
+    width: 100%;
 }
 
 .barraColor {
     background-color: #212121;
 }
+@media(max-width:768px){
+    .customNavBar {
+padding-top: 15px;
+    }
+}
 
 /* reserva */
 .fotoRestaurante2 {
     background-image: url( ../assets/fotorestaurant.png);
-    background-size: 100%;
-    background-position: center; 
     height: 100vh;
-    width: 100wh;
+    background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
+    width: 100wh;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     order: initial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     
 }
 
@@ -184,11 +196,10 @@ background-color: rgba(255, 165, 0, 0.5);
 /* Home */
 .fotoRestaurante {
     background-image: url( ../assets/fotorestaurant.png);
-    background-size: cover; 
-    height: 100vh;
-    width: 100wh;
+    background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
-    margin: 0;
+    height: 100vh;
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -359,17 +370,16 @@ margin-left: .825rem;
 
 /* Contactos */
 .fotoOpen {
-    background-image: url( ../assets/openimage.png);
-    background-size: 100%;
+    background-image: url( ../assets/fotoContacto.jpg);
+    background-size: cover;
     background-position: center; 
+    background-repeat: no-repeat;
+    margin-top: 4.875rem;
     height: 100vh;
-    width: 100 vw;
     display: flex;
-    position: relative; 
-    top: 4.875rem;
-    justify-content: center; 
+    text-align: center;
     align-items: center;
-    overflow: hidden; 
+    justify-content: center;
 }
 .fotoOpen h2 {
     font-size: 2rem;
