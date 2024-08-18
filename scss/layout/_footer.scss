@@ -1,0 +1,32 @@
+.contenedorTexto {
+    display: flex;
+    max-width: 80%;
+    margin-left: 3.25rem;
+    justify-content: space-between;
+
+    .nosotros1,
+    .horarios,
+    div {
+        h2,
+        p {
+            margin: 1rem 3rem;
+        }
+    }
+}
+
+.redesSociales {
+    text-align: right;
+    padding-right: .9375rem;
+
+    img {
+        width: 4rem; 
+        height: 6rem;
+        margin-left: .625rem;
+    }
+}
+
+.horarios {
+    p {
+        width: 7.125rem;
+    }
+}

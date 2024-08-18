@@ -1,0 +1,30 @@
+/* Contactos */
+@media (max-width:426px){
+    .fotoOpen {
+        height: 55vh;
+    }
+    }
+
+
+.fotoOpen h2 {
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 4.125rem;
+}
+.fondoContainerContactos {
+    background-color: #303030;
+}
+/* Media */
+
+
+@media (max-width:323px) {
+    /* menu */
+    .nuestroMenu {
+        width: 100%;
+    }  
+    .containerMenu {
+        gap: 0.7rem;
+    }
+}

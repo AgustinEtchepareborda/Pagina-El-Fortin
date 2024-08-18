@@ -1,0 +1,47 @@
+@media (max-width:513px) {
+    /* menu */
+    .containerMenu {
+        flex-direction: column;
+        text-align: center;
+    }  
+    .containerMenu img{
+        width: 48%;
+    }
+
+
+    html {
+            font-size: 10.3px;
+        }
+    .fondoMenu {
+        height: 40vh;
+    }
+}
+   
+    /* reserva */
+    .containerReserva {
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(4, 5rem);
+        }
+    .reserva{
+        grid-column: 1/5;
+        margin-left: 5.1rem;
+        margin-top: 5rem;
+    }
+    @media(max-width:620px){
+        /* menu */
+        html {
+            font-size: 9.3px;
+        }
+        .fondoMenu {
+            background-size: 120%;
+        }
+        .fondoMenu {
+            height: 50vh;
+        }
+        /* reserva */
+        .seleccionaHorario {
+            grid-column: 1/5;
+            grid-row: 2/3;}
+    
+    
+    }

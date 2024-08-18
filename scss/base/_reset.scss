@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif; 
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: map-get($colors, "primary");
+    color: map-get($colors, "text");
+  }
+
+  html{
+    width: 100%;
+}

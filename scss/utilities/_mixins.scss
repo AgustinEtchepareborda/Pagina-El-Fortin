@@ -1,0 +1,17 @@
+@mixin background-image($image-url, $size: cover, $position: center, $repeat: no-repeat) {
+    background-image: url($image-url);
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+  }
+  @mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  @mixin grid-setup($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+  }

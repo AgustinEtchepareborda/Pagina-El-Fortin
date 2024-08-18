@@ -1,0 +1,24 @@
+$colors: (
+  "primary": #212121,
+  "secondary": #303030,
+  "highlight": rgba(255, 165, 0, 0.3),
+  "highlight-hover": rgba(255, 165, 0, 0.5),
+  "text": white,
+  "background": #000,
+);
+
+$fonts: (
+  primary: 'Roboto, sans-serif',
+  sizes: (
+    small: 12px,
+    base: 16px,
+    large: 24px,
+    xlarge: 32px
+  ),
+  weights: (
+    light: 300,
+    regular: 400,
+    bold: 700
+  )
+);
+
