@@ -1,4 +1,4 @@
-@import "./utilities/variables";
+
 @import "./utilities/maps";
 @import "./utilities/mixins";
 
@@ -9,4 +9,7 @@
 @import "./layout/main-index";
 @import "./layout/footer";
 
+@import "./layout/media/media994";
 @import "./layout/media/media768";
+@import "./layout/media/media500-600";
+@import "./layout/media/media300-400";
