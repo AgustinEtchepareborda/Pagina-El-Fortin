@@ -12,4 +12,9 @@ body {
 
   html{
     width: 100%;
+    background-color: map-get($colors, "primary");
+}
+
+main{
+  background-color: map-get($colors, "primary");
 }

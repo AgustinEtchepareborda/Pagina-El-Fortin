@@ -12,6 +12,11 @@ body {
 
 html {
   width: 100%;
+  background-color: #212121;
+}
+
+main {
+  background-color: #212121;
 }
 
 .fotoRestaurante, .fotoRestaurante2, .fotoOpen, .fondoMenu {
@@ -36,6 +41,12 @@ html {
   position: relative;
   top: 4.875rem;
   overflow: hidden;
+}
+
+.acomodarButton {
+  position: absolute;
+  bottom: 320px;
+  left: 40%;
 }
 
 .containerReserva {
@@ -208,26 +219,44 @@ html {
 }
 
 /* Home */
-.buttonLink {
-  background-color: #000;
+/* From Uiverse.io by andrew-demchenk0 */
+.button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 4.25rem;
-  color: white;
-  padding: 0.3125rem 2.5rem;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 25px;
-  display: inline-flex;
-  position: relative;
-  top: 14.5rem;
-}
-.buttonLink:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 9px 12px;
+  gap: 8px;
+  height: 60px;
+  width: 250px;
+  border: none;
+  background: #261d1c;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 35.25rem;
 }
 
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #e52e26;
+}
+
+.button:hover .svg-icon {
+  animation: slope 1s linear infinite;
+}
+
+@keyframes slope {
+  50% {
+    transform: rotate(10deg);
+  }
+}
 .vector {
   padding-right: 0.925rem;
   width: 20%;
@@ -278,6 +307,11 @@ html {
 
 .fotosPlatosPrincipales, .imgPlato1, .imgPlato2, .imgPlato3 {
   width: 95%;
+  transition: all 200ms cubic-bezier(0.56, 0.67, 0.9, 0.76);
+}
+.fotosPlatosPrincipales .fotosPlatosPrincipales, .fotosPlatosPrincipales .imgPlato1:active, .fotosPlatosPrincipales .imgPlato2:active, .fotosPlatosPrincipales .imgPlato3:active, .imgPlato1 .fotosPlatosPrincipales, .imgPlato1 .imgPlato1:active, .imgPlato1 .imgPlato2:active, .imgPlato1 .imgPlato3:active, .imgPlato2 .fotosPlatosPrincipales, .imgPlato2 .imgPlato1:active, .imgPlato2 .imgPlato2:active, .imgPlato2 .imgPlato3:active, .imgPlato3 .fotosPlatosPrincipales, .imgPlato3 .imgPlato1:active, .imgPlato3 .imgPlato2:active, .imgPlato3 .imgPlato3:active {
+  transform: scale(1.2);
+  filter: drop-shadow(2px 2px 5px rgb(165, 151, 151));
 }
 
 /* Menu */
@@ -314,10 +348,15 @@ html {
 }
 .containerMenu img {
   width: 22%;
+  transition: all 200ms cubic-bezier(0.56, 0.67, 0.9, 0.76);
 }
 .containerMenu h4 {
   font-size: 1.5rem;
   padding-bottom: 1.25rem;
+}
+.containerMenu img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(2px 2px 5px rgb(165, 151, 151));
 }
 
 .nuestroMenu p {
