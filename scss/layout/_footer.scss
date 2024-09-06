@@ -1,8 +1,9 @@
 .contenedorTexto {
     display: flex;
-    max-width: 80%;
+    max-width: 93%;
     margin-left: 3.25rem;
     justify-content: space-between;
+    border-top: solid 1px white;
 
     .nosotros1,
     .horarios,
@@ -19,8 +20,8 @@
     padding-right: .9375rem;
 
     img {
-        width: 4rem; 
-        height: 6rem;
+        width: 2rem; 
+        height: 2rem;
         margin-left: .625rem;
     }
 }

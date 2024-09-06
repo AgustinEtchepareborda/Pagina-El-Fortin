@@ -13,6 +13,10 @@
     top: 4.875rem;
     overflow: hidden;
   }
+//   nosotros
+.espacioConFooter {
+    margin-bottom: 1.55rem;
+}
 //   .fondoMenu {
 // 	-webkit-animation: kenburns-top 5s linear forwards;
 // 	        animation: kenburns-top 5s linear forwards;
@@ -111,19 +115,11 @@
     grid-row: 1/2;
     text-align: center;
     margin-top: 1.5375rem;
+    border-bottom: solid 1px white;
 }
-.line2 {
-    img{
-    grid-column: 1/6;
-    grid-row: 1/2;
-    justify-content: center;
-    align-items: end;
-    width: 37.5rem;
-    margin-top: 5.125rem;
-}
-}
+
 .seleccionaNumDePersonas {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 2/3;  
     text-align: center;
     margin-top: 1.875rem;
@@ -135,13 +131,13 @@
     align-items: center;
     justify-content: center;
     gap: 1.625rem;
-    margin-bottom: 8.875rem;
     button {
         width: 20%;
         height: 30%;
     }
     p{
         font-size: 1.625rem;
+        padding-top: 15px;
     }
 }
 .reservaPaginaUno {
@@ -154,10 +150,10 @@
 }
 /* Reserva 2 */
 .seleccionaLaFecha {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 2/3;  
     text-align: center;
-    margin-top: 1.875rem;
+    margin-top: 2.875rem;
     font-size: 1.75rem;
 }
 .fechaColor {
@@ -176,7 +172,7 @@
 }
 /* Reserva 3 */
 .seleccionaHorario {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 2/3;  
     text-align: center;
     margin-top: 1.875rem;
@@ -199,13 +195,13 @@
 
 /* reserva 4 */
 .textoFelicitaciones {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 1/2;
     text-align: center;
     margin-top: 6.5375rem;
 }
 .teEsperamos {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 2/3;  
     text-align: center;
     margin-top: 3.875rem;
@@ -282,23 +278,31 @@
     margin-top: 4.125rem;
 }
 .texto1 {
-    position: relative;
-    top: 12.375rem;
-    display:inline-block;
     text-align: center;
-    justify-content: center;
-    background-color: transparent;
+    margin-top: 7rem;
+    max-width: 50%;
+    width: auto; 
+    height: auto; 
+    overflow: auto; 
+
     h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         }
     p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     }
 }
 
 .mozoCortando {
-    margin-right: 1.875rem;
-    width: 50%;
+    width: 190%; 
+    max-width: 100%; 
+    padding-right: 1.875rem;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+      
 }
 
 
@@ -313,10 +317,11 @@
     /*  flex-wrap: wrap; */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2.625rem;
-    width: 100%;
+    width: 100vw;
     padding-top: 1.25rem;
-    padding-left: 2.6rem;
-    padding-right: 2.6rem;
+    padding-left: 5.6rem;
+    padding-bottom: 1.225rem;
+
 }
 .fotosPlatosPrincipales , .imgPlato1, .imgPlato2, .imgPlato3 {
     width: 95%;
@@ -324,7 +329,6 @@
     .fotosPlatosPrincipales , .imgPlato1:active, .imgPlato2:active, .imgPlato3:active {
        transform: scale(1.2);
         filter: drop-shadow(2px 2px 5px rgb(165, 151, 151));
-
     }
 }
 
@@ -334,6 +338,8 @@
     top: 5rem;
     margin: auto;
     width: 80%;
+    padding-bottom: 1.5rem;
+
     h2{
         text-align: center;
         padding-top: 3.5625rem;
@@ -344,13 +350,11 @@
         text-align: center;
         padding-top: 1.5625rem;
         font-size: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px white;
     }
 }
 
-.linea2 {
-    flex-direction: column;
-    width: 100%;
-}
 
 .containerMenu {
     display: flex;
@@ -384,9 +388,30 @@
     border: 3px solid rgba(255, 255, 255, 0.08);
 }
 
+.containerLinea{ 
+    padding-bottom: 1rem;
 
+}
 
-
+// nosotros
+.tamanoTextoNosotros{
+    font-size: 1.56rem;
+}
+.tamanoH2Nosotros{
+    font-size: 2.3125rem;
+}
+.comidaNosotros1 {
+width: 50%;
+}
+.comidaNosotros{
+    width: 100%; 
+}
+.mozoNosotros {
+width: 100%;
+}
+.comidaNosotros1{
+    max-width: 100%;
+}
 
 
 

@@ -8,6 +8,8 @@
 body {
     background-color: map-get($colors, "primary");
     color: map-get($colors, "text");
+      overflow-x: hidden; /* Evita el scroll lateral */
+  
   }
 
   html{

@@ -8,3 +8,32 @@
 .barraNav {
     padding: 27.2px 0rem;
 }
+@media(max-width:1229px){
+    .texto1 {
+    
+        h1 {
+            font-size: 2rem;
+            }
+        p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        }
+    }
+}
+@media (max-width:880px){
+    .texto1 {
+        text-align: center;
+        margin-top: 2rem;
+        max-width: 50%;
+        width: auto; 
+        height: auto; 
+        overflow: auto; 
+    
+        h1 {
+            font-size: 2.2rem;
+            }
+        p {
+        font-size: 1.3rem;
+        }
+    }
+}

@@ -2,6 +2,45 @@
     .fotoOpen {
         height: 70vh;
     }
+    .textoConFoto {
+          flex-direction: column;
+        
+    }
+
+    .mozoNosotros {
+        width: 70%;
+        height: 80%;
+        margin-bottom: 2.5rem;
+    }
+    .comidaNosotros {
+        width: 70%;
+        height: 80%;
+    }
+    .espacioConFooter {
+        flex-direction: column-reverse; 
+    }
+
+
+    .texto1 {
+    
+        h1 {
+            font-size: 4rem;
+            }
+        p {
+        font-size: 2.2rem;
+        }
+    }
+    .mozoCortando {
+        padding-right: 0rem;
+        display: grid;
+  place-items: center;
+        img {
+            width: 80%;
+            height: 100%;
+            
+          }
+          
+    }
     }
 
     @media(max-width:788px){

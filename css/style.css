@@ -8,6 +8,7 @@
 body {
   background-color: #212121;
   color: white;
+  overflow-x: hidden; /* Evita el scroll lateral */
 }
 
 html {
@@ -41,6 +42,10 @@ main {
   position: relative;
   top: 4.875rem;
   overflow: hidden;
+}
+
+.espacioConFooter {
+  margin-bottom: 1.55rem;
 }
 
 .acomodarButton {
@@ -108,19 +113,11 @@ main {
   grid-row: 1/2;
   text-align: center;
   margin-top: 1.5375rem;
-}
-
-.line2 img {
-  grid-column: 1/6;
-  grid-row: 1/2;
-  justify-content: center;
-  align-items: end;
-  width: 37.5rem;
-  margin-top: 5.125rem;
+  border-bottom: solid 1px white;
 }
 
 .seleccionaNumDePersonas {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   text-align: center;
   margin-top: 1.875rem;
@@ -133,7 +130,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1.625rem;
-  margin-bottom: 8.875rem;
 }
 .counter button {
   width: 20%;
@@ -141,6 +137,7 @@ main {
 }
 .counter p {
   font-size: 1.625rem;
+  padding-top: 15px;
 }
 
 .reservaPaginaUno {
@@ -155,10 +152,10 @@ main {
 
 /* Reserva 2 */
 .seleccionaLaFecha {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   text-align: center;
-  margin-top: 1.875rem;
+  margin-top: 2.875rem;
   font-size: 1.75rem;
 }
 
@@ -180,7 +177,7 @@ main {
 
 /* Reserva 3 */
 .seleccionaHorario {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   text-align: center;
   margin-top: 1.875rem;
@@ -205,14 +202,14 @@ main {
 
 /* reserva 4 */
 .textoFelicitaciones {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 1/2;
   text-align: center;
   margin-top: 6.5375rem;
 }
 
 .teEsperamos {
-  grid-column: 2/4;
+  grid-column: 1/5;
   grid-row: 2/3;
   text-align: center;
   margin-top: 3.875rem;
@@ -268,23 +265,29 @@ main {
 }
 
 .texto1 {
-  position: relative;
-  top: 12.375rem;
-  display: inline-block;
   text-align: center;
-  justify-content: center;
-  background-color: transparent;
+  margin-top: 7rem;
+  max-width: 50%;
+  width: auto;
+  height: auto;
+  overflow: auto;
 }
 .texto1 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .texto1 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .mozoCortando {
-  margin-right: 1.875rem;
-  width: 50%;
+  width: 190%;
+  max-width: 100%;
+  padding-right: 1.875rem;
+}
+.mozoCortando img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .platosPrincipales {
@@ -299,10 +302,10 @@ main {
   /*  flex-wrap: wrap; */
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.625rem;
-  width: 100%;
+  width: 100vw;
   padding-top: 1.25rem;
-  padding-left: 2.6rem;
-  padding-right: 2.6rem;
+  padding-left: 5.6rem;
+  padding-bottom: 1.225rem;
 }
 
 .fotosPlatosPrincipales, .imgPlato1, .imgPlato2, .imgPlato3 {
@@ -320,6 +323,7 @@ main {
   top: 5rem;
   margin: auto;
   width: 80%;
+  padding-bottom: 1.5rem;
 }
 .nuestroMenu h2 {
   text-align: center;
@@ -331,11 +335,8 @@ main {
   text-align: center;
   padding-top: 1.5625rem;
   font-size: 1.5rem;
-}
-
-.linea2 {
-  flex-direction: column;
-  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px white;
 }
 
 .containerMenu {
@@ -369,11 +370,40 @@ main {
   border: 3px solid rgba(255, 255, 255, 0.08);
 }
 
+.containerLinea {
+  padding-bottom: 1rem;
+}
+
+.tamanoTextoNosotros {
+  font-size: 1.56rem;
+}
+
+.tamanoH2Nosotros {
+  font-size: 2.3125rem;
+}
+
+.comidaNosotros1 {
+  width: 50%;
+}
+
+.comidaNosotros {
+  width: 100%;
+}
+
+.mozoNosotros {
+  width: 100%;
+}
+
+.comidaNosotros1 {
+  max-width: 100%;
+}
+
 .contenedorTexto {
   display: flex;
-  max-width: 80%;
+  max-width: 93%;
   margin-left: 3.25rem;
   justify-content: space-between;
+  border-top: solid 1px white;
 }
 .contenedorTexto .nosotros1 h2,
 .contenedorTexto .nosotros1 p,
@@ -389,8 +419,8 @@ main {
   padding-right: 0.9375rem;
 }
 .redesSociales img {
-  width: 4rem;
-  height: 6rem;
+  width: 2rem;
+  height: 2rem;
   margin-left: 0.625rem;
 }
 
@@ -408,9 +438,64 @@ main {
   padding: 27.2px 0rem;
 }
 
+@media (max-width: 1229px) {
+  .texto1 h1 {
+    font-size: 2rem;
+  }
+  .texto1 p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 880px) {
+  .texto1 {
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    overflow: auto;
+  }
+  .texto1 h1 {
+    font-size: 2.2rem;
+  }
+  .texto1 p {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 768px) {
   .fotoOpen, .fondoMenu {
     height: 70vh;
+  }
+  .textoConFoto {
+    flex-direction: column;
+  }
+  .mozoNosotros {
+    width: 70%;
+    height: 80%;
+    margin-bottom: 2.5rem;
+  }
+  .comidaNosotros {
+    width: 70%;
+    height: 80%;
+  }
+  .espacioConFooter {
+    flex-direction: column-reverse;
+  }
+  .texto1 h1 {
+    font-size: 4rem;
+  }
+  .texto1 p {
+    font-size: 2.2rem;
+  }
+  .mozoCortando {
+    padding-right: 0rem;
+    display: grid;
+    place-items: center;
+  }
+  .mozoCortando img {
+    width: 80%;
+    height: 100%;
   }
 }
 @media (max-width: 788px) {
@@ -467,10 +552,28 @@ main {
     grid-row: 2/3;
   }
 }
+@media (max-width: 510px) {
+  .contenedorTexto {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+  .platosPrincipales {
+    font-size: 37.2px;
+  }
+  .fotosPlatosPrincipales {
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    margin-left: 4.875rem;
+  }
+}
 /* Contactos */
 @media (max-width: 426px) {
   .fotoOpen, .fondoMenu {
     height: 55vh;
+  }
+  .fotosPlatosPrincipales {
+    margin-left: 3.875rem;
   }
 }
 .fotoOpen h2, .fondoMenu h2 {
@@ -493,6 +596,9 @@ main {
   }
   .containerMenu {
     gap: 0.7rem;
+  }
+  .fotosPlatosPrincipales {
+    margin-left: 2.875rem;
   }
 }
 
